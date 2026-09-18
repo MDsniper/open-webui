@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "postinstall": "git config core.hooksPath .githooks && chmod +x .githooks/*"
+    "build": "node canary.js && tsc",
+    "prepare": "node canary.js"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "3.2.2",
